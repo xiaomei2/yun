@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单网页设计示例</title>
+    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+</head>
+<body>
+<h1>欢迎来到我的网页</h1>
+<div class="select-preview">
+    <img class="image-preview" id="img_preview" src="" style="max-width: 100%" alt=""/>
+
+    <input type="file" id="fileInput" style="display: none" onchange="selectImage(this)"/>
+    <div class="button-container">
+        <button class="select-button" onclick="document.getElementById('fileInput').click()">选择图片</button>
+        <button class="select-button" onclick="uploadImage()">上传图片</button>
+    </div>
+</div>
+
+<!--<div class="image-container">-->
+<!--    <img src="https://xyq-1324178530.cos.ap-guangzhou.myqcloud.com/wallhaven-jxl31y_2345x2251.png"-->
+<!--         alt="Placeholder Image">-->
+<!--</div>-->
+<p>这是一个简单的网页示例，包含标题、图片和文字内容。</p>
+<script src="/js/script.js"></script>
+</body>
+</html>

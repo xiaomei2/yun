@@ -1,0 +1,5 @@
+Name: User
+Host: 0.0.0.0
+Port: 8081
+
+Db:  root:123456@tcp(127.0.0.1:3306)/parcel?charset=utf8mb4&parseTime=True&loc=Local

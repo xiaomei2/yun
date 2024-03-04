@@ -1,0 +1,27 @@
+syntax = "v1"
+type (
+    pingInfoResponse {
+        Text string `json:"text"`
+    }
+    testInfoResponse {
+        Text string `json:"text"`
+    }
+    pickupInfoRequest {
+        Imagescode string `json:"imagescode"`
+    }
+    pickupInfoResponse {
+    
+        PickupCode string `json:"pickupCode"`
+        PickupName string `json:"pickupName"`
+
+    }
+)
+
+service User {
+    @handler pingInfo
+    post /ping () returns (pingInfoResponse)
+    @handler testInfo
+    get /test () returns (testInfoResponse)
+    @handler pickupInfo
+    post /pickupInfo (pickupInfoRequest) returns (pickupInfoResponse)
+}

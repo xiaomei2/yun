@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+h1 {
+    color: #333;
+}
+p {
+    color: #666;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*上传容器样式*/
+.select-preview{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%; /* 设置容器宽度 */
+    gap: 20px; /* 控制子元素之间的间隔 */
+}
+/*图片预览*/
+.image-preview{
+    border: 2px solid #ccc; /* 添加边框 */
+    padding: 10px; /* 添加内边距 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+
+}
+.button-container {
+    display: flex;/*水平显示*/
+    gap: 10px; /* 控制按钮之间的间距 */
+}
+.select-button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+/*图片容器样式*/
+.image-container {
+    margin-top: 20px; /* 设置按钮容器与上方元素的垂直间距 */
+    width: 20%; /* 设置容器宽度 */
+    border: 2px solid #ccc; /* 添加边框 */
+    padding: 10px; /* 添加内边距 */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* 添加阴影效果 */
+
+}
